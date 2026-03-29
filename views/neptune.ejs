@@ -6,8 +6,14 @@
     <img src="<%=   planetNeptune.image  %>">
     <br>
   <p><%= planetNeptune.description %></p>
+   <p>Distance From Sun: <%= planetNeptune.distanceFromSun %></p>
+   <p>Year Length: <%= planetNeptune.yearLength %></p>
+   <p>Radius: <%= planetNeptune.radius %></p>
+   <p>One Earth Day: <%= planetNeptune.oneEarthDay %></p>
+   <p>Moons: <%= planetNeptune.moons %></p>
+   <a href="<%= planetNeptune.websiteLink %>">Link:Learn More</a>
 
-        <%- include('partials/footer.ejs') %>
+  <%- include('partials/footer.ejs') %>
 
 </body>
 </html>

@@ -5,9 +5,16 @@
     <h2>Planet Saturn</h2>
     <img src="<%=   planetSaturn.image  %>">
     <br>
- <p><%= planetSaturn.description %></p>
+    <p><%= planetSaturn.description %></p>
+    <p>Distance From Sun: <%= planetSaturn.distanceFromSun %></p>
+    <p>Year Length: <%= planetSaturn.yearLength %></p>
+    <p>Radius: <%= planetSaturn.radius %></p>
+    <p>One Earth Day: <%= planetSaturn.oneEarthDay %></p>
+    <p>Moons: <%= planetSaturn.moons %></p>
+    <a href="<%= planetSaturn.websiteLink %>">Link:Learn More</a>
 
-        <%- include('partials/footer.ejs') %>
+    <%- include('partials/footer.ejs') %>
 
 </body>
 </html>
+

@@ -5,9 +5,15 @@
     <h2>Planet Mercury</h2>
     <img src="<%=   planetMercury.image  %>">
     <br>
- <p><%= planetMercury.description %></p>
+    <p><%= planetMercury.description %></p>
+    <p>Distance From Sun: <%= planetMercury.distanceFromSun %></p>
+    <p>Year Length: <%= planetMercury.yearLength %></p>
+    <p>Radius: <%= planetMercury.radius %></p>
+    <p>One Earth Day: <%= planetMercury.oneEarthDay %></p>
+    <p>Moons: <%= planetMercury.moons %></p>
+    <a href="<%= planetMercury.websiteLink %>">Link:Learn More</a>
 
-        <%- include('partials/footer.ejs') %>
+    <%- include('partials/footer.ejs') %>
 
 </body>
 </html>

@@ -24,3 +24,24 @@ p {
     line-height: 1.6;
 }
 
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ed7676;
+}

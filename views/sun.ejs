@@ -5,9 +5,11 @@
     <h2>Sun</h2>
     <img src="<%=   planetSun.image  %>">
     <br>
- <p><%= planetSun.description %></p>
+    <p><%= planetSun.description %></p>
+    <p>Radius: <%= planetSun.radius %></p>
+    <a href="<%= planetSun.websiteLink %>">Link:Learn More</a>
 
-        <%- include('partials/footer.ejs') %>
+    <%- include('partials/footer.ejs') %>
 
 </body>
 </html>

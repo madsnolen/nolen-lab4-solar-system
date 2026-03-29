@@ -5,9 +5,16 @@
     <h2>Planet Uranus</h2>
     <img src="<%=   planetUranus.image  %>">
     <br>
-<p><%= planetUranus.description %></p>
+    <p><%= planetUranus.description %></p>
+    <p>Distance From Sun: <%= planetUranus.distanceFromSun %></p>
+    <p>Year Length: <%= planetUranus.yearLength %></p>
+    <p>Radius: <%= planetUranus.radius %></p>
+    <p>One Earth Day: <%= planetUranus.oneEarthDay %></p>
+    <p>Moons: <%= planetUranus.moons %></p>
+    <a href="<%= planetUranus.websiteLink %>">Link:Learn More</a>
 
-        <%- include('partials/footer.ejs') %>
+     <%- include('partials/footer.ejs') %>
 
 </body>
 </html>
+

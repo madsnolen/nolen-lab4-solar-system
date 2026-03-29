@@ -6,8 +6,15 @@
     <img src="<%=   planetVenus.image  %>">
     <br>
     <p><%= planetVenus.description %></p>
+    <p>Distance From Sun: <%= planetVenus.distanceFromSun %></p>
+    <p>Year Length: <%= planetVenus.yearLength %></p>
+    <p>Radius: <%= planetVenus.radius %></p>
+    <p>One Earth Day: <%= planetVenus.oneEarthDay %></p>
+    <p>Moons: <%= planetVenus.moons %></p>
+    <a href="<%= planetVenus.websiteLink %>">Link:Learn More</a>
 
-        <%- include('partials/footer.ejs') %>
+    <%- include('partials/footer.ejs') %>
 
 </body>
 </html>
+

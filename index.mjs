@@ -14,19 +14,16 @@ app.get('/', async(req, res) => {
     let response = await fetch(url);
     let data = await response.json();
     let randomImage = data.urls.full;
-
-    // NASA Picture of the Day
-    let nasaUrl = "https://api.nasa.gov/planetary/apod?api_key=9mUzIkhlZCZaOoMfspg7jMmwZCZ4LiRHtkgkambD&date=2026-03-21";
-    let nasaResponse = await fetch(nasaUrl);
-    let nasaData = await nasaResponse.json();
-
-
-    res.render("index",{"image":randomImage, "nasa":nasaData});
-
+    res.render("index",{"image":randomImage})
 });
 
+app.get('/apod', async (req, res) => {
+    let nasaUrl = "https://api.nasa.gov/planetary/apod?api_key=9mUzIkhlZCZaOoMfspg7jMmwZCZ4LiRHtkgkambD&date=2026-03-21;
+    let response = await fetch(nasaUrl);
+    let data = await response.json();
 
-
+    res.render('apod', { nasa: data });
+});
 
 app.get('/earth', (req, res) => {
    let planetEarth = planets.getEarth();

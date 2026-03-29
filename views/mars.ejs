@@ -5,9 +5,15 @@
     <h2>Planet Mars</h2>
     <img src="<%=   planetMars.image  %>">
     <br>
-   <p><%= planetMars.description %></p>
+    <p><%= planetMars.description %></p>
+    <p>Distance From Sun: <%= planetMars.distanceFromSun %></p>
+    <p>Year Length: <%= planetMars.yearLength %></p>
+    <p>Radius: <%= planetMars.radius %></p>
+    <p>One Earth Day: <%= planetMars.oneEarthDay %></p>
+    <p>Moons: <%= planetMars.moons %></p>
+    <a href="<%= planetMars.websiteLink %>">Link:Learn More</a>
 
-        <%- include('partials/footer.ejs') %>
+    <%- include('partials/footer.ejs') %>
 
 </body>
 </html>

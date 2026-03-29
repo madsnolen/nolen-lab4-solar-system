@@ -5,9 +5,16 @@
     <h2>Planet Earth</h2>
     <img src="<%=   planetEarth.image  %>">
      <br>
-   <p><%= planetEarth.description %></p>
+     <p><%= planetEarth.description %></p>
+     <p>Distance From Sun: <%= planetEarth.distanceFromSun %></p>
+     <p>Year Length: <%= planetEarth.yearLength %></p>
+     <p>Radius: <%= planetEarth.radius %></p>
+     <p>One Earth Day: <%= planetEarth.oneEarthDay %></p>
+     <p>Moons: <%= planetEarth.moons %></p>
+     <a href="<%= planetEarth.websiteLink %>">Link:Learn More</a>
 
     <%- include('partials/footer.ejs') %>
 
 </body>
 </html>
+

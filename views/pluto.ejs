@@ -6,8 +6,15 @@
     <img src="<%=   planetPluto.image  %>">
     <br>
   <p><%= planetPluto.description %></p>
+   <p>Distance From Sun: <%= planetPluto.distanceFromSun %></p>
+   <p>Year Length: <%= planetPluto.yearLength %></p>
+   <p>Radius: <%= planetPluto.radius %></p>
+   <p>One Earth Day: <%= planetPluto.oneEarthDay %></p>
+   <p>Moons: <%= planetPluto.moons %></p>
+   <a href="<%= planetPluto.websiteLink %>">Link:Learn More</a>
 
         <%- include('partials/footer.ejs') %>
 
 </body>
 </html>
+
